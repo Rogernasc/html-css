@@ -11,13 +11,9 @@
             min-width: 320px;
             max-width: 1000px;
             margin:auto;
-            background-color: beige;
-           
-            
+            background-color: beige;    
         }
 
-
-        
         header {
             color: aliceblue;
             font-family: Arial, Helvetica, sans-serif;
@@ -26,9 +22,17 @@
             border-radius: 10PX 10PX 0PX 0PX;
             text-align: center;
             background-image: linear-gradient( to bottom,#a4c4d8, #4C6C73 );
-            
-        
         }
+        .cabecalho {
+            display: flex;
+            flex-direction: row ;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+
+    
 
         
         header > h1 {
@@ -43,8 +47,6 @@
             font-size: 14px;
             padding: 10px;
             text-decoration: none;
-          
-
         }
 
         a {
@@ -53,17 +55,12 @@
             font-size: smaller;
             margin-right:  20px;
             font-weight: bold;
-            
-
         }
 
         a:hover {
             color : yellow;
-            text-decoration: underline;
-            
+            text-decoration: underline;   
         }
-
-        
 
         main{
 
@@ -74,8 +71,7 @@
             padding: 10px;
             text-align: justify;
             box-shadow: 0px 0px 0px black;
-          
-            
+             
         }
 
         footer {
@@ -86,8 +82,6 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: small;
             text-align: center;
-                
-
         }
 
         footer:hover {
@@ -98,7 +92,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
     
         <h1 class="landing-page"> LANDING PAGE</h1>
         <h1 class="nome-principal">ROGER ROCHA DO NASCIMENTO</h1>
@@ -106,6 +100,9 @@
             <p>Fone:(81)98920-4224</p>
             <p>Email: roger.mail.pe@gmail.com</p>
             <a href="https://www.linkedin.com/in/roger-nascimento-0a340833/" target="_blank">https://www.linkedin.com/in/roger-nascimento-0a340833/</a>
+    
+    <img src="Imagem1.jpg" alt="Imagem Roger">
+    
     </header>
         <nav>
             <a href="experiencia.html" target="_blank">Experiência Profissional</a>
