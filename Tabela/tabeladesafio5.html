@@ -5,38 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Responsivas</title>
+    <style>
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th {border : 1px solid black;
+            padding: 5px;
+            font-weight: bolder;
+
+        }
+        tr,td {
+            border : 1px solid black;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+        td{
+            text-align: center;
+        }
+        th.produto {
+            text-align: left;
+        }
+        div#conteiner {
+            overflow-x: auto;
+        }
+
+        
+
+    </style>
 </head>
 <body>
     <h1>Tabelas em Telas Pequenas</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo quas, alias eveniet perspiciatis ab aliquam repellat eius. Esse totam vel ut cumque aspernatur ex ipsam exercitationem autem, praesentium voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quaerat, unde officia facere, voluptatum aspernatur eveniet neque sapiente ratione sint maxime ducimus possimus exercitationem ad deleniti iste atque asperiores provident!</p>
 
-    <table>
-        <caption>Tabelas Responsivas</caption>
-        <tr>
-            <th scope="col">Produto</th>
-            <th scope="col">Jan</th>
-            <th scope="col">Fev</th>
-            <th scope="col">Mar</th>
-            <th scope="col">Abr</th>
-            <th scope="col">Mai</th>
-            <th scope="col">Jun</th>
-            <th scope="col">Jul</th>
-            <th scope="col">Ago</th>
-            <th scope="col">Set</th>
-            <th scope="col">Out</th>
-            <th scope="col">Nov</th>
-            <th scope="col">Dez</th>
-        </tr>
+    <div id="conteiner">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="produto">TV 40"</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="produto">Home Theater</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="produto">Samsung Galaxy S20</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="produto">Ipad Mini</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="produto">Playstation 4</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="produto">Lava Louças</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="produto">Amazon Echo</th>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">07</td>
+                    <td scope="row">12</td>
+                    <td scope="row">12</td>
+                    <td scope="row">10</td>
+                    <td scope="row">05</td>
+                    <td scope="row">02</td>
+                    <td scope="row">01</td>
+                    <td scope="row">01</td>
+                    <td scope="row">04</td>
+                    <td scope="row">16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo quas, alias eveniet perspiciatis ab aliquam repellat eius. Esse totam vel ut cumque aspernatur ex ipsam exercitationem autem, praesentium voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quaerat, unde officia facere, voluptatum aspernatur eveniet neque sapiente ratione sint maxime ducimus possimus exercitationem ad deleniti iste atque asperiores provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus, nemo eius similique corrupti molestiae. Porro tenetur in quaerat numquam odit voluptatum, assumenda quo et beatae, corrupti accusamus mollitia placeat?</p>
 
-
-
-
-
-
-
-
-    </table>
     
 </body>
 </html>
