@@ -1,0 +1,30 @@
+const handlePhone = (event) => {
+    let input = event.target
+    input.value = phoneMask(event.keyCode,input.value)
+}
+
+const phoneMask = (keyCode,value) => {
+    if (!value) return ""
+    value = value.replace(/\D/g,'')
+    value = value.replace(/(\d\d)(\d)/,"($1) $2")
+    value = value.replace(/(\d)(\d\d\d\d)$/,"$1-$2")
+    if(keyCode != 8 && keyCode != 229){
+      if(value.length == 1){
+          value = "("+value
+      } else if(value.length == 2) {
+          value = "("+value+")"
+      }
+    } else {
+      if(value.length == 1) {
+          value = "("+value
+      } else if(value.length == 2) {
+          value = "("+value
+      }
+    }
+
+    return value
+}
+
+wpp.addEventListener('keyup', function(event) {
+      handlePhone(event);
+});
